@@ -1,0 +1,18 @@
+
+
+table#score-legend {
+	thead {
+		th {
+			background-color: navy;
+			color: white;
+			text-transform: uppercase;
+		}
+	}
+	tfoot {
+		th {
+			background-color: unset;
+			color: navy;
+			text-transform: uppercase;
+		}
+	}
+}

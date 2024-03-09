@@ -1,0 +1,17 @@
+.sheet {
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+}
+
+
+
+table {
+	
+	tbody td {
+		padding: 0.25rem;
+	}
+	tbody tr:nth-child(odd) {
+		background-color: #eee;
+	}
+}
