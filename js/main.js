@@ -1,46 +1,28 @@
 /* vanilla js */
 
-
-	/* Do things after DOM has fully loaded */
-	
-	// when an input is given focus, get the parent form ID.
-	// then, for each input field in that form, add an onKeyUp event that fires (if it has a value) a function adding all the inputs in _that_ form...
-	// write the total as the innerHTML of 'pX_total' span at the end of the form.
+// when an input is given focus, get the parent form ID.
+// then, for each input field in that form, add an onKeyUp event that fires (if it has a value) a function adding all the inputs in _that_ form...
+// write the total as the innerHTML of 'pX_total' span at the end of the form.
 
 
-function findTotal(el) {
-	let playerForm = el.form.attr('name');
-	var arr = document.getElementsByClassName('subscore');
-	let total = 0;
-	
-	for(var i=0;i<arr.length;i++){
-		if(parseInt(arr[i].value))
-			total += parseInt(arr[i].value);
-	}
-	
-	console.log('playerForm = ' + playerForm);
-
-	document.getElementById(playerForm + '_total').value = total;
-}
-
-
-
-let app = document.querySelector('#app');
+let app = document.getElementById('app');
 let players = ['1', '2', '3', '4', '5'];
 let expDayTrip = false;
 let playerHTML = `<div class="legend">
-	<div>Player</div>
-	<div>Monday</div>
-	<div>Tuesday</div>
-	<div>Wednesday</div>
-	<div>Thursday</div>
-	<div>Friday</div>
-	<div>Saturday</div>
-	<div>Mood</div>
-	<div>Exp Tokens</div>
-	<div>Trains</div>
-	<div>Research</div>
+	<form action="null" name="">
+	<div>Player <input disabled size="1" aria-hidden="true" /></div>
+	<div>Monday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Tuesday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Wednesday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Thursday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Friday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Saturday <input disabled size="1" aria-hidden="true" /></div>
+	<div>Mood <input disabled size="1" aria-hidden="true" /></div>
+	<div>Exp Tokens <input disabled size="1" aria-hidden="true" /></div>
+	<div>Trains <input disabled size="1" aria-hidden="true" /></div>
+	<div>Research <input disabled size="1" aria-hidden="true" /></div>
 	<div>Total</div>
+	</form>
 </div>`;
 
 for (let playerNumber of players) {
@@ -64,6 +46,22 @@ for (let playerNumber of players) {
 				</div>
 			</form>
 		</div>`;
+}
+
+
+function findTotal(el) {
+	let playerForm = el.form.attr('name');
+	var arr = document.getElementsByClassName('subscore');
+	let total = 0;
+	
+	for(var i=0;i<arr.length;i++){
+		if(parseInt(arr[i].value))
+			total += parseInt(arr[i].value);
+	}
+	
+	console.log('playerForm = ' + playerForm);
+
+	document.getElementById(playerForm + '_total').value = total;
 }
 
 app.innerHTML = playerHTML;
