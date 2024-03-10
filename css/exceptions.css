@@ -16,3 +16,13 @@ table#score-legend {
 		}
 	}
 }
+
+
+
+.testing-two-days {
+	display: flex;
+	gap: 0.5rem;
+	background-color: bisque;
+	padding: 0.5rem;
+	margin-block: 1rem 4rem;
+}

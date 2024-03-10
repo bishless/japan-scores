@@ -1,17 +1,22 @@
+body {
+	font-family: sans-serif;
+}
+
 .sheet {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row nowrap;
 	gap: 0;
 }
 
 
 
-table {
-	
-	tbody td {
-		padding: 0.25rem;
-	}
-	tbody tr:nth-child(odd) {
-		background-color: #eee;
-	}
+
+input {
+	font-size: 1.3em; 
+	padding: 5px;
+	border: 1px solid #eee;
+}
+
+form:focus-within input {
+	border-color: #696969;
 }

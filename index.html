@@ -11,194 +11,30 @@
 	<div class="content-grid">
 		<h1>Let's go to Japan - Travel Journal</h1>
 		<hr>
-		<div class="sheet">
-			<div>
-				<table id="score-legend">
-					<thead>
-						<tr>
-							<th>Player</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Monday</td>
-						</tr>
-						<tr>
-							<td>Tuesday</td>
-						</tr>
-						<tr>
-							<td>Wednesday</td>
-						</tr>
-						<tr>
-							<td>Thursday</td>
-						</tr>
-						<tr>
-							<td>Friday</td>
-						</tr>
-						<tr>
-							<td>Saturday</td>
-						</tr>
-						<tr>
-							<td>Mood</td>
-						</tr>
-						<tr>
-							<td>Exp Tokens</td>
-						</tr>
-						<tr>
-							<td>Trains</td>
-						</tr>
-						<tr>
-							<td>Research</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th>Total</th>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
-			<div>
-				<form>
-					<table>
-						<thead><tr><th>Player 1</th></tr></thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-monday" class="visually-hidden">Player 1's Monday score</label>
-										<input type="number" name="p1-monday" id="p1-monday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-tuesday" class="visually-hidden">Player 1's Tuesday score</label>
-										<input type="number" name="p1-tuesday" id="p1-tuesday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-wednesday" class="visually-hidden">Player 1's Wednesday score</label>
-										<input type="number" name="p1-wednesday" id="p1-wednesday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-thursday" class="visually-hidden">Player 1's Thursday score</label>
-										<input type="number" name="p1-thursday" id="p1-thursday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-friday" class="visually-hidden">Player 1's Friday score</label>
-										<input type="number" name="p1-friday" id="p1-friday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-tuesday" class="visually-hidden">Player 1's Tuesday score</label>
-										<input type="number" name="p1-tuesday" id="p1-tuesday" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-mood" class="visually-hidden">Player 1's Mood score</label>
-										<input type="number" name="p1-mood" id="p1-mood" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-exp-tokens" class="visually-hidden">Player 1's Experience Tokens score</label>
-										<input type="number" name="p1-exp-tokens" id="p1-exp-tokens" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-trains" class="visually-hidden">Player 1's Trains score</label>
-										<input type="number" name="p1-trains" id="p1-trains" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field field-number">
-										<label for="p1-research" class="visually-hidden">Player 1's Research Tokens score</label>
-										<input type="number" name="p1-research" id="p1-research" placeholder="0" value="">
-									</div>
-								</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th>$total</th>
-							</tr>
-						</tfoot>
-					</table>
+		<h3>testing</h3>
+		<div class="testing-two-days">
+			<div class="form-wrap">
+				<form name="p1">
+					<input onKeyUp="findTotal()" name="p1-monday" type="text" class="subscore" inputmode="numeric" value="" /><br />
+					<input onKeyUp="findTotal()" name="p1-tuesday" type="text" class="subscore" inputmode="numeric" value="" /><br />
+					<input id="p1_total" style="font-weight: bold" disabled value="" />
 				</form>
 			</div>
-			<div>
-				<form>
-					<table>
-						<thead><tr><th>Player 2</th></tr></thead>
-						<tbody>
-							<tr>
-								<td>
-									<div><label for="p2-monday" class="visually-hidden">Player 2's Monday score</label><input type="number" name="p2-monday" id="p2-monday" placeholder="0" value=""></div>
-								</td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<th>$total</th>
-							</tr>
-						</tfoot>
-					</table>
+			<div class="form-wrap">
+				<form name="p2">
+					<input onKeyUp="findTotal()" name="p2-monday" type="text" class="subscore" inputmode="numeric" value="" /><br />
+					<input onKeyUp="findTotal()" name="p2-tuesday" type="text" class="subscore" inputmode="numeric" value="" /><br />
+					<input id="p2_total" style="font-weight: bold" disabled value="" />
 				</form>
 			</div>
 		</div>
+		<hr>
+		
+		<section id="app" class="sheet" aria-label="Score Sheet"></section>
+		
+		
 	</div>
+	
+	<script src="js/main.js"></script>
 </body>
 </html>
