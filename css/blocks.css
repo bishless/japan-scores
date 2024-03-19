@@ -23,6 +23,7 @@
 	
 	.legend {
 		/* flex-grow: 2; */
+		min-width: 120px;
 
 		input {
 			visibility: hidden;
@@ -74,8 +75,14 @@
 	}
 }
 
-.player.p1 .field:first-of-type { background-color: var(--color-violet-300); }
-.player.p2 .field:first-of-type { background-color: var(--color-blue-300); }
-.player.p3 .field:first-of-type { background-color: var(--color-emerald-300); }
-.player.p4 .field:first-of-type { background-color: var(--color-orange-300); }
-.player.p5 .field:first-of-type { background-color: var(--color-pink-300); }
+.p1 .field { background-color: var(--color-violet-100); }
+.p2 .field { background-color: var(--color-blue-100); }
+.p3 .field { background-color: var(--color-emerald-100); }
+.p4 .field { background-color: var(--color-orange-100); }
+.p5 .field { background-color: var(--color-pink-100); }
+
+.p1 .field:first-of-type { background-color: var(--color-violet-300); }
+.p2 .field:first-of-type { background-color: var(--color-blue-300); }
+.p3 .field:first-of-type { background-color: var(--color-emerald-300); }
+.p4 .field:first-of-type { background-color: var(--color-orange-300); }
+.p5 .field:first-of-type { background-color: var(--color-pink-300); }
